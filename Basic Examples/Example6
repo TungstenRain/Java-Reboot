@@ -1,0 +1,24 @@
+/**
+ *
+ * @author frank
+ */
+public class Example6 {
+
+    public Example6() {
+        int x = 10, y = 5;
+        System.out.println("x > y : "+(x > y));
+        System.out.println("x < y : "+(x < y));
+        System.out.println("x >= y : "+(x >= y));
+        System.out.println("x <= y : "+(x <= y));
+        System.out.println("x == y : "+(x == y));
+        System.out.println("x != y : "+(x != y)); 
+    }
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        new Example6();
+    }
+    
+}
