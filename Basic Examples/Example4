@@ -1,0 +1,53 @@
+/**
+ *
+ * @author frank
+ */
+public class Example4 {
+
+    public Example4() {
+        // Declare primitive variables
+        int j, k;
+        
+        // initialize variables with values
+        j = 10;
+        k = 5;
+        
+        // Print values of variables
+        System.out.println("The value for j is: " + j);
+        System.out.println("The value for k is: " + k);
+        
+        // overwrite variable values
+        j = 8;
+        k = j;
+        
+        // Print values of variables
+        System.out.println("The value for j is: " + j);
+        System.out.println("The value for k is: " + k);
+        
+        // Instantiate and initialize integers
+        Integer i1 = new Integer("1");
+        Integer i2 = new Integer("2");
+        
+        // Print values of variables
+        System.out.println("The value for i1 is: " + i1);
+        System.out.println("The value for i2 is: " + i2);
+        
+        // Perform multiple simultaneous assignments
+        k = j = 42;
+        
+        // Print values of variables
+        System.out.println("The value for j is: " + j);
+        System.out.println("The value for k is: " + k);
+        
+    }
+    
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        new Example4();
+    }
+    
+}
