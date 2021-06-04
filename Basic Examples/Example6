@@ -5,7 +5,10 @@
 public class Example6 {
 
     public Example6() {
+        // Declare and initialize variables
         int x = 10, y = 5;
+        
+        // Print results of operations
         System.out.println("x > y : "+(x > y));
         System.out.println("x < y : "+(x < y));
         System.out.println("x >= y : "+(x >= y));
