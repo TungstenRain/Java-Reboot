@@ -1,0 +1,30 @@
+/**
+ *
+ * @author frank
+ */
+public class Example6 {
+
+    public Example8() {
+        // Declare and initialize variables
+        int x = 0xFAEF; //1 1 1 1 1 0 1 0 1 1 1 0 1 1 1 1
+        int y = 0xF8E9; //1 1 1 1 1 0 0 0 1 1 1 0 1 0 0 1
+        
+        // Print results of operations
+        System.out.println("x & y : " + (x & y));
+        System.out.println("x | y : " + (x | y));
+        System.out.println("x ^ y : " + (x ^ y));
+        System.out.println("~x : " + (~x));
+        System.out.println("x << y : " + (x << y));
+        System.out.println("x >> y : " + (x >> y));
+        System.out.println("x >>> y : " + (x >>> y));
+        //There is no unsigned left shift operator
+    }
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        new Example8();
+    }
+    
+}
