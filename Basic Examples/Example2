@@ -1,0 +1,26 @@
+/**
+ *
+ * @author frank
+ */
+public class Example2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Declare an integer variable, then store an integer into it
+        int num; 
+        num = 100;
+        
+        // Print the value of the variable
+        System.out.println("This is the value of num: " + num);
+        
+        // Multiply the value of the variable by two
+        num = num * 2;
+        
+        // Print the new value of the variable
+        System.out.println("The value of num * 2 = " + num);
+                
+    }
+    
+}
