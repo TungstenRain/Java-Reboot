@@ -1,0 +1,26 @@
+/**
+ *
+ * @author frank
+ */
+public class Example7 {
+
+    public Example7() {
+        // Declare and initialize variables
+        boolean x = true;
+        boolean y = false;
+        
+        // Print results of operations
+        System.out.println("x & y : " + (x & y));
+        System.out.println("x && y : " + (x && y));
+        System.out.println("x | y : " + (x | y));
+        System.out.println("x || y: " + (x || y));
+        System.out.println("x ^ y : " + (x ^ y));
+        System.out.println("!x : " + (!x));
+    }
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        new Example7();
+    }
