@@ -1,0 +1,26 @@
+/**
+ *
+ * @author frank
+ */
+public class Example3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Declare integer variables
+        int y;
+        y = 20;
+        
+        // Loop through the variables to demonstrate iteration.
+        for (int i = 0; i < 10; i++) {
+            System.out.println("This is the value of i: " + i);
+            System.out.println("This is the value of y: " + y);
+            
+            // Change the value of y as it iterates through the loop
+            y = y - 1;
+        }
+        
+    }
+    
+}
