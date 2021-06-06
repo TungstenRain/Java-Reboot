@@ -1,0 +1,78 @@
+/**
+ *
+ * @author frank
+ */
+public class MethodOverloading {
+
+    /**
+     * First variation of the sumOfParams method
+     * This requires no parameters and does not return a value, but it performs a function.
+     */
+    void sumOfParams(){
+        System.out.println("No parameters, no return value.");
+    }
+    /**
+     * Second variation of the sumOfParams method
+     * It requires a parameter, but does not return a value even though it performs a function.
+     * 
+     * @param a int
+     */
+    void sumOfParams(int a) {
+        System.out.println("There is one variable: " + a);
+    }
+    /**
+     * Third variation of the sumOfParams method that requires parameters and returns a value.
+     * 
+     * @param a int
+     * @param b int
+     * 
+     * @return int, the value of the summation of the parameters a and b
+     */
+    int sumOfParams(int a, int b) {
+        System.out.println("Two parameters given: " + a + " and " + b);
+        return (a + b);
+    }
+    /**
+     * Fourth variation of the sumOfParams method that requires parameters and returns a value
+     * 
+     * @param a double
+     * @param b double
+     * 
+     * @return double, the value of the summation of the parameters a and b
+     */
+    double sumOfParams(double a, double b) {
+        System.out.println("Two parameters given: " + a + " and " + b);
+        return (a + b);
+    }
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Instantiate the class
+        MethodOverloading overloading = new MethodOverloading();
+        
+        // Declare variables
+        int intResult;
+        double doubleResult;
+        
+        // Call the overloaded methods
+        System.out.println("The first variation of the method.");
+        overloading.sumOfParams();
+        System.out.println();
+        
+        System.out.println("The second variation of the method.");
+        overloading.sumOfParams(5);
+        System.out.println();
+                
+        System.out.println("The first variation of the method.");
+        intResult = overloading.sumOfParams(6, 20);
+        System.out.println("The sum is: " + intResult);
+        System.out.println();
+                
+        System.out.println("The first variation of the method.");
+        doubleResult = overloading.sumOfParams(5.3, 10.2);
+        System.out.println("The sum is: " + doubleResult);
+    }
+    
+}
