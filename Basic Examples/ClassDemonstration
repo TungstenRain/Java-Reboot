@@ -1,0 +1,64 @@
+/**
+ *
+ * @author frank
+ */
+public class ClassDemonstration {
+
+    public ClassDemonstration() {
+        System.out.println("The number of Cube objects is (calling the variable): " + Cube.numberOfCubes);
+        System.out.println("The number of Cube objects is (calling the method): " + Cube.getNumberOfCubes());
+        
+        System.out.println("Instantiating a Cube");
+        // Instantiate a Cube class as an object
+        Cube cubeObj; // Creates the reference to the Cube class
+        cubeObj = new Cube(); // Instantiates the object as a Cube
+        /**
+         * Note: Instantiating is generally completed in one line:
+         * Cube cubeObj = new Cube();
+         */
+        
+        System.out.println("The number of Cube objects is: " + cubeObj.getNumberOfCubes());
+        System.out.println("The volume of the cube is: " + cubeObj.getVolume());
+    }
+      
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        new ClassDemonstration();
+    }
+
+}
+
+/*
+* This is a class to demonstrate Object Oriented Programming
+*/
+class Cube {
+    // Declare and initialize variables
+    int height = 10;
+    int width = 10;
+    int depth = 10;
+
+    // Declare and initialize public static variable
+    public static int numberOfCubes = 0;
+
+    // Public static methods
+    public static int getNumberOfCubes() {
+        return  numberOfCubes;
+    }
+    
+    // Public methods
+    /**
+     * Return the volume of the cube, derived from its height, width, and depth
+     * 
+     * @return int, volume of the cube
+     */
+    public int getVolume(){
+        return (height * width * depth);
+    }
+
+    // Instantiating the Cube class
+    public Cube() {
+        numberOfCubes++;
+    }
+}
