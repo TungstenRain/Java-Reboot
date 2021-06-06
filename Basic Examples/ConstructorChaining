@@ -1,0 +1,82 @@
+/**
+ *
+ * @author frank
+ */
+public class ConstructorChaining {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Instantiate cubes
+        Cube cubeObj1 = new Cube();
+        Cube cubeObj2 = new Cube(20);
+        Cube cubeObj3 = new Cube(30, 40);
+        Cube cubeObj4 = new Cube(50, 60, 70);
+        
+        // Display the volume of the cubes
+        System.out.println("The volume of the first cube is: " + cubeObj1.getVolume());
+        System.out.println("The volume of the second cube is: " + cubeObj2.getVolume());
+        System.out.println("The volume of the third cube is: " + cubeObj3.getVolume());
+        System.out.println("The volume of the fourth cube is: " + cubeObj4.getVolume());
+    }
+    
+}
+class Cube {
+    // Class variables
+    int length;
+    int height;
+    int depth;
+    
+    // Constructors
+    /**
+     * Cube with no parameters is automatically instantiated with values for length, height, and depth. This begins the chaining process
+     */
+    Cube() {
+        this(10);
+        System.out.println("Finished with the Default Constructor of Cube.");
+    }
+    /**
+     * Cube with one parameter is automatically instantiated with the provided value and proceeds to the next part of the chaining process.
+     * Default height is set to 10.
+     * 
+     * @param length int
+     */
+    Cube(int length) {
+        this(length, 10);
+        System.out.println("Finished with the Default Constructor of Cube.");
+    }
+    /**
+     * Cube with two parameters is automatically instantiated with the provided values and proceeds to the next part of the chaining process.
+     * Default width is set to 10.
+     * 
+     * @param length int
+     * @param height int
+     */
+    Cube(int length, int height) {
+        this(length, height, 10);
+        System.out.println("Finished with the Parameterized Constructor of Cube.");
+    }    
+    /**
+     * Cube with parameters is instantiated with the provided values
+     * 
+     * @param length int
+     * @param height int
+     * @param depth int
+     */
+    Cube(int length, int height, int depth) {
+        this.length = length;
+        this.height = height;
+        this.depth = depth;
+    }
+    
+    // Class methods
+    /**
+     * Get the volume of the cube
+     * 
+     * @return int, the volume of the cube
+     */
+    public int getVolume() {
+        return (length * height * depth);
+    }
+}
