@@ -1,0 +1,58 @@
+/**
+ *
+ * @author frank
+ */
+public class BasicConstructors {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Instantiate cubes
+        Cube cubeObj1 = new Cube();
+        Cube cubeObj2 = new Cube(20, 30, 40);
+        
+        // Display the volume of the cubes
+        System.out.println("The volume of the first cube is: " + cubeObj1.getVolume());
+        System.out.println("The volume of the second cube is: " + cubeObj2.getVolume());
+    }
+    
+}
+class Cube {
+    // Class variables
+    int length;
+    int height;
+    int depth;
+    
+    // Constructors
+    /**
+     * Cube with no parameters is automatically instantiated with values for length, height, and depth.
+     */
+    Cube() {
+        length = 10;
+        height = 10;
+        depth = 10;
+    }
+    /**
+     * Cube with parameters is instantiated with the provided values
+     * 
+     * @param length int
+     * @param height int
+     * @param depth int
+     */
+    Cube(int length, int height, int depth) {
+        this.length = length;
+        this.height = height;
+        this.depth = depth;
+    }
+    
+    // Class methods
+    /**
+     * Get the volume of the cube
+     * 
+     * @return int, the volume of the cube
+     */
+    public int getVolume() {
+        return (length * height * depth);
+    }
+}
